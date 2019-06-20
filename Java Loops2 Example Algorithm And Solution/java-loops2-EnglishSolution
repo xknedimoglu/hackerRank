@@ -1,7 +1,10 @@
+@author Rüştü Kaan Nedimoğlu
+@date   20.06.2019
+
 import java.util.*;
 import java.io.*;
 
-class Solution{
+class Solution {
     public static void main(String []argh){
         Scanner in = new Scanner(System.in);
         int t=in.nextInt();
