@@ -1,0 +1,35 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+    
+    public static void main(String[] args) {
+	
+        Scanner scanner = new Scanner(System.in);
+        double payment = scanner.nextDouble();
+        scanner.close();
+
+        NumberFormat numberFormatUS;
+        NumberFormat numberFormatCHINA;
+        NumberFormat numberFormatFRANCE;
+        NumberFormat numberFormatINDIA;
+        
+
+        numberFormatUS = NumberFormat.getCurrencyInstance(Locale.US);
+        System.out.println("US: " + numberFormatUS.format(payment));
+
+        numberFormatINDIA = NumberFormat.getCurrencyInstance(new Locale("en", "in"));
+        System.out.println("India: " + numberFormatINDIA.format(payment));
+
+        numberFormatCHINA = NumberFormat.getCurrencyInstance(Locale.CHINA);
+        System.out.println("China: " + numberFormatCHINA.format(payment));
+
+        numberFormatFRANCE = NumberFormat.getCurrencyInstance(Locale.FRANCE);
+        System.out.println("France: " + numberFormatFRANCE.format(payment));
+
+    }
+}
+
