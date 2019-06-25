@@ -14,10 +14,12 @@ public class Solution {
 
     // Complete the compareTriplets function below.
     static List<Integer> compareTriplets(List<Integer> a, List<Integer> b) {
+    
          int countA= 0;
          int countB = 0;
 
-         for(int i = 0; i< a.size();i++){
+         for(int i = 0; i< a.size();i++)
+         {
                 if(a.get(i)>b.get(i)){
                     countA++;
                 }
@@ -25,42 +27,43 @@ public class Solution {
                     countB++;
                 }
                 else {
-
                 }
          }
+         
         int[] vowels =  new int[2];
         vowels[0]=countA;
-        vowels[1] = countB;
+        vowels[1]=countB;
 
         List<Integer> arrList = new ArrayList<Integer>();
         arrList.add(countA);
         arrList.add(countB);
-            return arrList;
+        
+        return arrList;
 
     }
 
     public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+   //     BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+   //     BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 
-        List<Integer> a = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
-            .map(Integer::parseInt)
-            .collect(toList());
+   //       List<Integer> a = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
+   //         .map(Integer::parseInt)
+   //         .collect(toList());
+ 
+   //      List<Integer> b = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
+   //          .map(Integer::parseInt)
+   //          .collect(toList());
+ 
+   //       List<Integer> result = compareTriplets(a, b);
 
-        List<Integer> b = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
-            .map(Integer::parseInt)
-            .collect(toList());
+   //     bufferedWriter.write(
+   //         result.stream()
+   //             .map(Object::toString)
+   //             .collect(joining(" "))
+   //         + "\n"
+   //     );
 
-        List<Integer> result = compareTriplets(a, b);
-
-        bufferedWriter.write(
-            result.stream()
-                .map(Object::toString)
-                .collect(joining(" "))
-            + "\n"
-        );
-
-        bufferedReader.close();
-        bufferedWriter.close();
+   //     bufferedReader.close();
+   //     bufferedWriter.close();
     }
 }
