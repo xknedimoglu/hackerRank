@@ -1,3 +1,6 @@
+@author Rüştü Kaan Nedimoğlu
+@date   28.06.2019
+    
 import java.io.*;
 import java.util.*;
 import java.text.*;
@@ -17,11 +20,11 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        String s, t;
-        Scanner in = new Scanner(System.in);
-        s = in.nextLine();
-        t = in.nextLine();
-        System.out.println(stringsXOR(s, t));
+//        String s, t;
+//        Scanner in = new Scanner(System.in);
+//        s = in.nextLine();
+//        t = in.nextLine();
+//        System.out.println(stringsXOR(s, t));
     }
 }
 
