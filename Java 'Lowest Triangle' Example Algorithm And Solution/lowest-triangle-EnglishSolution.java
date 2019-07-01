@@ -1,3 +1,6 @@
+@author Rüştü Kaan Nedimoğlu
+@date   01.07.2019
+    
 import java.io.*;
 import java.util.*;
 import java.text.*;
@@ -7,6 +10,7 @@ import java.util.regex.*;
 public class Solution {
 
     static int lowestTriangle(int base, int area){
+        
         float height = ( area * 2 ) / base;
         if((area*2) % base != 0 ){
             height = height + 1;
@@ -16,11 +20,11 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        int base = in.nextInt();
-        int area = in.nextInt();
-        int height = lowestTriangle(base, area);
-        System.out.println(height);
-    }
+//        Scanner in = new Scanner(System.in);
+//        int base = in.nextInt();
+//        int area = in.nextInt();
+//        int height = lowestTriangle(base, area);
+//        System.out.println(height);
+//    }
 }
 
