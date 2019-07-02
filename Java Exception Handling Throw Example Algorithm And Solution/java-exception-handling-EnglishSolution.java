@@ -1,3 +1,6 @@
+@author Rüştü Kaan Nedimoğlu
+@date   02.07.2019
+    
 import java.util.Scanner;
 
 class MyCalculator {
