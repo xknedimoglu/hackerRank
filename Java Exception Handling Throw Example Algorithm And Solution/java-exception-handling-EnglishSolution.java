@@ -4,17 +4,16 @@
 import java.util.Scanner;
 
 class MyCalculator {
-    static long power(int number1,int number2) throws Exception{
-       
-        long result2=0;
-        double result=0;
+    static long power(int number1,int number2) throws Exception{  
+        
+            long result2=0;
+            double result=0;
         
             if(number1 == 0 && number2==0){
                 throw new Exception("n and p should not be zero.");  
             }
             else if (number1 < 0 || number2< 0){
-                throw new Exception("n or p should not be negative.");  
-
+                throw new Exception("n or p should not be negative.");
             }
             else {
               result = Math.pow(number1,number2);
