@@ -1,3 +1,6 @@
+@author Rüştü Kaan Nedimoğlu
+@date   10.07.2019
+
 import java.io.*;
 import java.math.*;
 import java.security.*;
