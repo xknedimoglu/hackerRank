@@ -1,14 +1,17 @@
+@author Rüştü Kaan Nedimoğlu
+@date  08.08.2019
+
 import java.util.*;
+
 public class Main{
 	
    static Iterator func(ArrayList mylist){
-      Iterator it=mylist.iterator();
-      while(it.hasNext()){
-
+	   
+        Iterator it=mylist.iterator();
+	while(it.hasNext()){
         Object element = it.next();
          if(element instanceof String)//Hints: use instanceof operator
-
-			break;
+		break;
 		}
       return it;
       
