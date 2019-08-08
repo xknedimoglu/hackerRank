@@ -1,3 +1,6 @@
+@ Rüştü Kaan Nedimoğlu
+@ 08.08.2019 
+    
 import java.io.*;
 import java.util.*;
 import java.text.*;
@@ -5,14 +8,12 @@ import java.math.*;
 import java.util.regex.*;
 import java.lang.reflect.*;
 
-
 class Singleton{
     
     public static String str = null;
     public static Singleton str2= null; // singleton object
     
-    private Singleton(){
-        // private singleton constructor
+    private Singleton(){   // private singleton constructor      
     }
     public static Singleton getSingleInstance() //public static function getSingleInstance
     {        
@@ -21,5 +22,4 @@ class Singleton{
         }
        return str2;
     } 
-
 }
